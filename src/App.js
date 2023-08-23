@@ -357,7 +357,7 @@ function App() {
                     </svg>
                   </div>
                   <div className="text-con">
-                    <div className="text-1">Search</div>
+                    <div className="text-1">1. Search</div>
                     <div className="text-2">
                       Enter the property's unique identification code or its
                       location details in the search bar provided on our
@@ -380,7 +380,7 @@ function App() {
 </svg>
                   </div>
                   <div className="text-con">
-                    <div className="text-1">Blockchain Validation</div>
+                    <div className="text-1">2. Blockchain Validation</div>
                     <div className="text-2">
                     Our system taps into the power of blockchain to instantly validate the ownership status of the property. Blockchain's immutability guarantees that the information you receive is tamper-proof and up-to-date.
                     </div>
@@ -408,7 +408,7 @@ function App() {
                     </svg>
                   </div>
                   <div className="text-con">
-                    <div className="text-1">Ownership Details</div>
+                    <div className="text-1">3. Ownership Details</div>
                     <div className="text-2">
                       Within moments, you'll receive comprehensive ownership
                       details about the property. You'll know whether the
@@ -424,7 +424,48 @@ function App() {
         </div>
         <div className="content-3">
           <div className="title"></div>
-          <div className="container"></div>
+          <div className="container">
+            <div className="content-1">
+              <div className="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
+  <path d="M42 0C18.8042 0 0 18.8042 0 42C0 65.1971 18.8042 84 42 84C65.1971 84 84 65.1971 84 42C84 18.8042 65.1971 0 42 0ZM42 78.8327C21.7363 78.8327 5.25 62.2637 5.25 41.9998C5.25 21.7361 21.7363 5.24984 42 5.24984C62.2637 5.24984 78.75 21.7362 78.75 41.9998C78.75 62.2634 62.2637 78.8327 42 78.8327ZM58.7619 26.6319L34.1197 51.429L23.0225 40.3318C21.9974 39.3068 20.3358 39.3068 19.3094 40.3318C18.2844 41.3569 18.2844 43.0185 19.3094 44.0436L32.3019 57.0373C33.3269 58.0611 34.9885 58.0611 36.0149 57.0373C36.133 56.9192 36.2342 56.7905 36.3261 56.6567L62.4763 30.3449C63.5001 29.3199 63.5001 27.6582 62.4763 26.6319C61.4499 25.6069 59.7883 25.6069 58.7619 26.6319Z" fill="#9AEB8E"/>
+</svg>
+              </div>
+              <div className="text-con">
+                <div className="text-1">Confidence</div>
+                <div className="text-2">Make informed decisions about property purchases with verified ownership information</div>
+              </div>
+            </div>
+            <div className="content-2">
+              <div className="icon"><svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
+  <path d="M60.375 60.375V68.25H22.3125C19.1796 68.25 16.1751 67.0055 13.9598 64.7902C11.7445 62.5749 10.5 59.5704 10.5 56.4375C10.5 53.3046 11.7445 50.3001 13.9598 48.0848C16.1751 45.8695 19.1796 44.625 22.3125 44.625H23.625V39.375H22.3125C17.7872 39.375 13.4473 41.1727 10.2475 44.3725C7.04765 47.5723 5.25 51.9122 5.25 56.4375C5.25 60.9628 7.04765 65.3027 10.2475 68.5025C13.4473 71.7023 17.7872 73.5 22.3125 73.5H60.375V81.375H81.375V60.375H60.375ZM76.125 76.125H65.625V65.625H76.125V76.125Z" fill="#9AEB8E"/>
+  <path d="M55.125 57.75H49.875V49.875H34.125V57.75H28.875V49.875C28.8764 48.483 29.43 47.1485 30.4142 46.1642C31.3985 45.18 32.733 44.6264 34.125 44.625H49.875C51.267 44.6264 52.6015 45.18 53.5858 46.1642C54.57 47.1485 55.1236 48.483 55.125 49.875V57.75ZM42 42C40.4425 42 38.9199 41.5381 37.6249 40.6728C36.3298 39.8075 35.3205 38.5776 34.7244 37.1386C34.1284 35.6997 33.9725 34.1163 34.2763 32.5887C34.5802 31.0611 35.3302 29.6579 36.4315 28.5565C37.5329 27.4552 38.9361 26.7052 40.4637 26.4013C41.9913 26.0975 43.5747 26.2534 45.0136 26.8495C46.4526 27.4455 47.6825 28.4549 48.5478 29.7499C49.4131 31.0449 49.875 32.5675 49.875 34.125C49.8729 36.2129 49.0426 38.2148 47.5662 39.6912C46.0898 41.1676 44.0879 41.9979 42 42ZM42 31.5C41.4808 31.5 40.9733 31.654 40.5416 31.9424C40.1099 32.2308 39.7735 32.6408 39.5748 33.1205C39.3761 33.6001 39.3242 34.1279 39.4254 34.6371C39.5267 35.1463 39.7767 35.614 40.1438 35.9812C40.511 36.3483 40.9787 36.5983 41.4879 36.6996C41.9971 36.8009 42.5249 36.7489 43.0045 36.5502C43.4842 36.3515 43.8942 36.0151 44.1826 35.5834C44.471 35.1517 44.625 34.6442 44.625 34.125C44.6243 33.429 44.3475 32.7617 43.8554 32.2696C43.3633 31.7775 42.696 31.5007 42 31.5Z" fill="#9AEB8E"/>
+  <path d="M61.6875 10.5H23.625V2.625H2.625V23.625H23.625V15.75H61.6875C64.8204 15.75 67.8249 16.9945 70.0402 19.2098C72.2555 21.4251 73.5 24.4296 73.5 27.5625C73.5 30.6954 72.2555 33.6999 70.0402 35.9152C67.8249 38.1305 64.8204 39.375 61.6875 39.375H60.375V44.625H61.6875C66.2128 44.625 70.5527 42.8274 73.7525 39.6275C76.9523 36.4277 78.75 32.0878 78.75 27.5625C78.75 23.0372 76.9523 18.6973 73.7525 15.4975C70.5527 12.2977 66.2128 10.5 61.6875 10.5ZM18.375 18.375H7.875V7.875H18.375V18.375Z" fill="#9AEB8E"/>
+</svg></div>
+              <div className="text-con">
+              <div className="text-1">Transparency</div>
+                <div className="text-2">Access accurate and transparent property ownership data directly from authoritative sources.</div>
+              </div>
+            </div>
+            <div className="content-3">
+              <div className="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="84" viewBox="0 0 72 84" fill="none">
+  <path d="M36 84L17.472 74.121C12.19 71.3109 7.77292 67.1156 4.69478 61.9852C1.61664 56.8548 -0.00633919 50.983 1.86077e-05 45V6C0.00160704 4.40919 0.634259 2.88399 1.75913 1.75911C2.88401 0.634239 4.40921 0.00158843 6.00002 0H66C67.5908 0.00158843 69.116 0.634239 70.2409 1.75911C71.3658 2.88399 71.9984 4.40919 72 6V45C72.0064 50.983 70.3834 56.8548 67.3053 61.9852C64.2271 67.1156 59.81 71.3109 54.528 74.121L36 84ZM6.00002 6V45C5.99504 49.8954 7.32333 54.6998 9.84231 58.8974C12.3613 63.095 15.9759 66.5273 20.298 68.826L36 77.199L51.702 68.829C56.0246 66.5301 59.6395 63.0972 62.1585 58.8991C64.6775 54.7009 66.0055 49.8959 66 45V6H6.00002Z" fill="#9AEB8E"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="25" viewBox="0 0 36 25" fill="none">
+  <path d="M12 17.5488L4.23 10.75L0 14.4513L12 24.9513L36 3.95125L31.77 0.25L12 17.5488Z" fill="#9AEB8E"/>
+</svg>
+
+
+
+              </div>
+              <div className="text-con">
+              <div className="text-1">Security</div>
+                <div className="text-2">Rely on blockchain's security features to prevent fraud and unauthorized alterations.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="section-1"></section>
