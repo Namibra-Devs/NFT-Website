@@ -6,7 +6,8 @@ function Home() {
 
   return (
     <>
-      <main>
+      <section>
+      <main className="search-page">
         <div className="main-content-1">
           <div className="vector-1">
             <svg
@@ -122,6 +123,75 @@ function Home() {
           </div>
         </div>
       </main>
+      <div className="search-title">Land Status</div>
+          <div className="search-content">
+            <div className="search-container">
+              <div className="content-1">
+                <div className="item-1">
+                  <div className="text-1">Entry No.</div>
+                  <div className="text-2">1</div>
+                </div>
+                <div className="item-2">
+                  <div className="text-1">Date of Intrument</div>
+                  <div className="text-2">08/05/2023</div>
+                </div>
+                <div className="item-3">
+                  <div className="text-1">Date of Registration</div>
+                  <div className="text-2">08/07/2023</div>
+                </div>
+                <div className="item-2">
+                  <div className="text-1">Registration Number</div>
+                  <div className="text-2">986543</div>
+                </div>
+
+              </div>
+              <div className="content-2">
+ <div className="container">
+ <div className="item-title">Land Title Registry</div>
+                <div className="item-1">
+                <div className="sub-item-1">
+                  <div className="data-1">
+                    <div className="text">Owner Name</div>
+                  </div>
+                  <div className="data-2">Asamoa Afeez</div>
+                </div>
+                  <div className="sub-item-2">
+                  <div className="data-1">Owner Address</div>
+                  <div className="data-2">123 Main Street, Accra, Greater Accra Region, Ghana.</div>
+                  </div>
+                </div>
+                <div className="item-2">
+                <div className="sub-item-1">
+                  <div className="data-1">Section</div>
+                  <div className="data-2">069</div>
+                </div>
+                <div className="sub-item-2">
+                  <div className="data-1">Block</div>
+                  <div className="data-2">7</div>
+                </div>
+                <div className="sub-item-3">
+                  <div className="data-1">Parcel</div>
+                  <div className="data-2">4324</div>
+                </div>
+                <div className="sub-item-4">
+                  <div className="data-1">Locality</div>
+                  <div className="data-2">Ogbojo</div>
+                </div>
+                <div className="sub-item-5">
+                  <div className="data-1">District</div>
+                  <div className="data-2">019</div>
+                </div>
+                <div className="sub-item-6">
+                  <div className="data-1">Region</div>
+                  <div className="data-2">Greater Accra</div>
+                </div>
+                </div>
+ </div>
+              </div>
+            </div>
+          </div>
+  
+      </section>
       <section className="section-1">
         <div>
           <div className="container">

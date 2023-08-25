@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function Home() {
-  const verifyDocument = () => {
+  const verifyDocument = (event) => {
+    event.preventDefault();
     console.log("working!");
+    alert('hgfsdhydfhy');
   };
+
 
   return (
     <>
@@ -96,6 +99,7 @@ function Home() {
             </svg>
           </div>
         </div>
+        {  console.log("working!")}
         <div className="main-content-2">
           <div className="text-1">
             Instant Property Verification Through Blockchain and NFTs
@@ -108,16 +112,26 @@ function Home() {
               <label>
                 Search for land with Certificate Number or Folio Number
               </label>
-              <div className="input-container">
-                <input type="text" />
-              </div>
+              <form onSubmit={verifyDocument}>
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search..."
+                onChange={verifyDocument}
+              />
+              <button className="btn btn-primary" type="submit">
+                Search
+              </button>
+            </div>
+          </form>
             </div>
             {/* <div className="search-btn"></div> */}
             <input
               className="search-btn"
               type="button"
               value="Verify Ownership"
-              onClick={verifyDocument()}
+              onClick={verifyDocument}
             />
           </div>
         </div>
@@ -764,6 +778,9 @@ function Home() {
               </div>
               <div className="btn-container">
                 <input type="button" value="Subscribe" />
+                <button className="btn btn-primary" type="submit">
+                Search
+              </button>
               </div>
             </div>
           </div>

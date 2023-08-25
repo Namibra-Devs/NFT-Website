@@ -99,6 +99,24 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* main.search-page {
+  background: linear-gradient(180deg, rgba(8, 33, 4, 0.80) 0%, rgba(23, 49, 19, 0.55) 100%), url(../public/images/home.png), lightgray 50% / cover no-repeat;
+  display: flex;
+height: 800px;
+padding: 80px 150px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 100px;
+align-self: stretch;
+display: flex;
+width: 1440px;
+padding: 100px 150px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 32px;
+} */
 
 main .main-content-1 {
   display: flex;
@@ -138,6 +156,227 @@ main .main-content-2 {
   gap: 24px;
   flex: 1 0 0;
   z-index: 3;
+}
+
+.search-title{
+  color: #FFF;
+  font-family: Whyte Inktrap;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 57.6px; 
+}
+
+.search-content {
+  display: flex;
+  height: 689px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+.search-content > .search-container {
+  background: #172A14;
+  filter: blur(2px);
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.search-content > .search-container > .content-1{
+  display: flex;
+  width: 1140px;
+  padding: 0px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.search-content > .search-container > .content-1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.search-content > .search-container > .content-1 > div > .text-1 {
+  color: #93F384;
+  font-family: IBM Plex Sans;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px; /* 132.632% */
+}
+.search-content > .search-container > .content-1 > div > .text-2 {
+  color: #FFF;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.2px; /* 105% */
+}
+.search-content > .search-container > .content-2 {
+  position: absolute;
+  left: 1px;
+  bottom: 96.5px;
+  width: 1140px;
+height: 350px;
+}
+
+.search-content > .search-container > .content-2 >  .container>.item-title {
+  color: #A7A8A6;
+  font-family: IBM Plex Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px; /* 84% */
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.search-content > .search-container > .content-2 >  .container> .item-1 {
+  display: flex;
+  width: 900px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.search-content > .search-container > .content-2 >  .container>.item-1 > .sub-item-1 {
+  border: 1px solid #757575;
+  display: flex;
+width: 281px;
+padding: 19px 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+flex-shrink: 0;
+align-self: stretch;
+width: fit-content;
+padding: 0 20px;
+
+}
+.search-content > .search-container > .content-2 >  .container> .item-1 > .sub-item-1 > .data-1 {
+  display: flex;
+  height: 18px;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+
+
+.search-content > .search-container > .content-2 > .container> .item-1 > .sub-item-1 > .data-1 > .text {
+  color: #93F384;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px; /* 126% */
+}
+.search-content > .search-container > .content-2 >  .container> .item-1 > .sub-item-1 > .data-2 {
+  color: #FFF;
+  font-family: IBM Plex Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.2px; /* 90% */
+}
+.search-content > .search-container > .content-2 >  .container> .item-1 > .sub-item-2 {
+  border: 1px solid #757575;
+  display: flex;
+padding: 26px 24px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+flex: 1 0 0;
+}
+.search-content > .search-container > .content-2 > .container> .item-1 > .sub-item-2 > .data-1 {
+  color: #93F384;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px; /* 126% */
+}
+.search-content > .search-container > .content-2 >  .container> .item-1 > .sub-item-2 > .data-2 {
+  color: #FFF;
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px; /* 140% */
+  align-self: stretch;
+}
+.search-content > .search-container > .content-2 >  .container>.item-2 {
+  display: flex;
+  width: 1140px;
+  padding: 0px 25px;
+  justify-content: center;
+  align-items: center;
+}
+.search-content > .search-container > .content-2 > .container> .item-2 {
+  display: flex;
+  width: 1140px;
+  padding: 0px 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-content > .search-container > .content-2 > .container> .item-2 > div {
+  border: 1px solid #757575;
+  display: flex;
+width: 140px;
+padding: 19px 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+flex-shrink: 0;
+align-self: stretch;
+}
+.search-content > .search-container > .content-2 > .container> .item-2 > div {
+  border: 1px solid #757575;
+  display: flex;
+width: 140px;
+padding: 19px 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+flex-shrink: 0;
+align-self: stretch;
+width: fit-content;
+padding-left: 50px;
+padding-right: 50px;
+}
+.search-content > .search-container > .content-2 >  .container>.item-2 > div .data-1 {
+  color: #93F384;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px; /* 126% */
+
+  /* color: #93F384;
+font-family: IBM Plex Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 25.2px;  */
+}
+.search-content > .search-container > .content-2 > .container > .item-2 > div > .data-2{
+  color: #FFF;
+  font-family: IBM Plex Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.2px; /* 90% */
+  width: fit-content;
+/* height: 18px; */
 }
 
 .main-content-2 .text-1{
@@ -276,6 +515,15 @@ section.section-1 .container .sub-container .content  .icon{
 
 }
 section.section-1 .container .sub-container .content  .text{
+  color: #FCFCFC;
+  font-family: IBM Plex Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px; /* 90% */
+
+}
+section.section-1 .container .container.content  .text{
   color: #FCFCFC;
   font-family: IBM Plex Sans;
   font-size: 28px;

@@ -5,64 +5,15 @@ import Home from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
 
 function App() {
-  const verifyDocument = () => {
-    console.log("working!");
-  };
+  // const verifyDocument = () => {
+  //   console.log("working!");
+  // };
 
   return (
     <div className="app-container">
       <Router>
-        {/* <header className="header"> */}
 
-        {/* <div className="header-item-1">Ghana Land Trust</div>
-<div className="header-item-2">
-  <div className="sub-item"> <Link to="/">Home</Link> </div>
-  <div className="sub-item">About Us</div>
-  <div className="sub-item">Contact Us</div>
-  <div className="header-btn">
-    <div className="verify-btn">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="21"
-        viewBox="0 0 20 21"
-        fill="none"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M2.91683 6.54175C2.80177 6.54175 2.7085 6.63502 2.7085 6.75008V15.9167C2.7085 16.0318 2.80177 16.1251 2.91683 16.1251H17.0835C17.1986 16.1251 17.2918 16.0318 17.2918 15.9167V6.75008C17.2918 6.63502 17.1986 6.54175 17.0835 6.54175H2.91683ZM1.4585 6.75008C1.4585 5.94467 2.11141 5.29175 2.91683 5.29175H17.0835C17.8889 5.29175 18.5418 5.94467 18.5418 6.75008V15.9167C18.5418 16.7222 17.8889 17.3751 17.0835 17.3751H2.91683C2.11141 17.3751 1.4585 16.7222 1.4585 15.9167V6.75008Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M9.7915 8.83325C9.7915 8.48807 10.0713 8.20825 10.4165 8.20825H17.9165C18.2617 8.20825 18.5415 8.48807 18.5415 8.83325V13.4166C18.5415 13.7618 18.2617 14.0416 17.9165 14.0416H10.4165C10.0713 14.0416 9.7915 13.7618 9.7915 13.4166V8.83325ZM11.0415 9.45825V12.7916H17.2915V9.45825H11.0415Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M17.9165 7.375C18.2617 7.375 18.5415 7.65482 18.5415 8V14.25C18.5415 14.5952 18.2617 14.875 17.9165 14.875C17.5713 14.875 17.2915 14.5952 17.2915 14.25V8C17.2915 7.65482 17.5713 7.375 17.9165 7.375Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M3.2094 3.71219C3.61131 3.17898 4.2666 2.79175 5.2085 2.79175H11.2502C11.6743 2.79175 12.3457 2.92716 12.9235 3.40304C13.528 3.90085 13.9585 4.7124 13.9585 5.91675C13.9585 6.26193 13.6787 6.54175 13.3335 6.54175C12.9883 6.54175 12.7085 6.26193 12.7085 5.91675C12.7085 5.03777 12.4098 4.59931 12.1289 4.36795C11.8213 4.11467 11.451 4.04175 11.2502 4.04175H5.2085C4.65039 4.04175 4.36819 4.25153 4.2076 4.46459C4.02431 4.70774 3.9585 5.01527 3.9585 5.20779V5.91675C3.9585 6.26193 3.67867 6.54175 3.3335 6.54175C2.98832 6.54175 2.7085 6.26193 2.7085 5.91675V5.20779C2.7085 4.8033 2.83018 4.2153 3.2094 3.71219Z"
-          fill="white"
-        />
-        <path
-          d="M13.9585 11.75C14.3037 11.75 14.5835 11.4702 14.5835 11.125C14.5835 10.7798 14.3037 10.5 13.9585 10.5C13.6133 10.5 13.3335 10.7798 13.3335 11.125C13.3335 11.4702 13.6133 11.75 13.9585 11.75Z"
-          fill="white"
-        />
-      </svg>
-    </div>
-    <div className="text">Verify Ownership</div>
-  </div>
-</div> */}
-
-        <nav className="header">
+        <header className="header">
           <div className="header-item-1">Ghana Land Trust</div>
           <ul className="header-item-2">
             <li>
@@ -120,11 +71,11 @@ function App() {
               </Link>
             </li>
           </ul>
-        </nav>
+        </header>
         {/* </header> */}
         <Routes>
           <Route path="/" element={<Home />} />
-
+          <Route path="*" element={<div>Error Page</div>} />
           <Route path="/search-result/:id" element={<SearchResult />} />
         </Routes>
       </Router>
