@@ -1,15 +1,21 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
+
 function Home() {
+  const [landId, setLandId] = useState("");
+
   const verifyDocument = (event) => {
     event.preventDefault();
-    console.log("working!");
-    alert('hgfsdhydfhy');
-  };
 
+    if (landId) {
+      console.log(landId);
+      landId && (window.location.href = `/search-result/${landId}`);
+    }
+  };
 
   return (
     <>
-      <main>
+      <main className="search-page">
         <div className="main-content-1">
           <div className="vector-1">
             <svg
@@ -99,7 +105,6 @@ function Home() {
             </svg>
           </div>
         </div>
-        {  console.log("working!")}
         <div className="main-content-2">
           <div className="text-1">
             Instant Property Verification Through Blockchain and NFTs
@@ -107,33 +112,26 @@ function Home() {
           <div className="text-2">
             Empowering Ghanaian Land Buyers with Secure Ownership Information
           </div>
-          <div className="search-area">
+          <form onSubmit={verifyDocument} className="search-area">
             <div className="search-bar">
               <label>
                 Search for land with Certificate Number or Folio Number
               </label>
-              <form onSubmit={verifyDocument}>
-            <div className="input-group mb-3">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search..."
-                onChange={verifyDocument}
-              />
-              <button className="btn btn-primary" type="submit">
-                Search
-              </button>
+
+              <div className="input-container">
+                <input
+                  onChange={(e) => setLandId(e.target.value)}
+                  type="text"
+                  required
+                />
+              </div>
             </div>
-          </form>
-            </div>
-            {/* <div className="search-btn"></div> */}
             <input
               className="search-btn"
-              type="button"
+              type="submit"
               value="Verify Ownership"
-              onClick={verifyDocument}
             />
-          </div>
+          </form>
         </div>
       </main>
       <section className="section-1">
@@ -772,17 +770,18 @@ function Home() {
                 registry.
               </div>
             </div>
-            <div className="item-2">
+            <form className="item-2">
               <div className="input-container">
-                <input type="email" placeholder="Email Address" />
+                <input
+                  onChange={(e) => setLandId(e.target.value)}
+                  type="text"
+                  required
+                />
               </div>
               <div className="btn-container">
-                <input type="button" value="Subscribe" />
-                <button className="btn btn-primary" type="submit">
-                Search
-              </button>
+                <input type="submit" value="Subscribe" />
               </div>
-            </div>
+            </form>
           </div>
           <div className="image">
             <svg

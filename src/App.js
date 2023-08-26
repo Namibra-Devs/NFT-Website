@@ -5,10 +5,6 @@ import Home from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
 
 function App() {
-  // const verifyDocument = () => {
-  //   console.log("working!");
-  // };
-
   return (
     <div className="app-container">
       <Router>
